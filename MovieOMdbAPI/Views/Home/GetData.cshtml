@@ -1,0 +1,11 @@
+﻿@model IEnumerable<MovieOMdbAPI.Models.Movies>
+
+
+@foreach (var m in Model)
+{
+
+    <h1>Title @m.Title</h1><br />
+    <h4>made: @m.Year</h4>
+    <img src=@m.Poster />
+    <br /><br />
+}
